@@ -1,0 +1,86 @@
+/* form 공통 부분 */
+.form-container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.form-group > div {
+  display: flex;
+  gap: 9px;
+}
+
+.form-group input[type="text"],
+.form-group input[type="email"],
+.form-group input[type="password"] {
+  flex-grow: 1;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+/* password */
+.form-password {
+  justify-content: space-around;
+  display: flex;
+  gap: 9px;
+}
+
+.form-password > div {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-password > div {
+  flex-grow: 1;
+}
+
+/* address */
+
+.form-address {
+  display: flex;
+  gap: 9px;
+}
+
+.form-address > div {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+/* file */
+
+.form-file > div {
+  justify-content: space-between;
+}
+
+/* form button */
+.input__btn {
+  padding: 10px 20px;
+  background-color: #c0c0c0;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.join__btn {
+  padding: 10px 20px;
+  background-color: #0D6EFD;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.btn-secondary {
+  background-color: #ccc;
+}
