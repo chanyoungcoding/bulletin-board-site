@@ -11,8 +11,6 @@ try {
   $db->setAttribute(PDO::MYSQL_ATTR_USE_BUFFERED_QUERY, true); // PDO는 결과 집합을 서버로부터 일괄적으로 가져오며 쿼리 버퍼링을 활성화(대부분 이렇게 사용)
   $db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION); // PDO에서 발생하는 모든 에러는 예외(Exception)로 처리
 
-  echo "<p>DB 연결 성공</p>";
-
 } catch( PDOException $e) {
   echo $e->getMessage();
 }

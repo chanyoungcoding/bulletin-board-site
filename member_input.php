@@ -16,8 +16,9 @@ include './inc_header.php'
   <h1 class="text-center">회원가입</h1>
     <div class="form-container">
       <h2>회원가입</h2>
-      <form method="post" action="member_input.php">
-
+      <form name="input_form" method="post" enctype="multipart/form-data" action="pg/member_process.php">
+        <input type="hidden" name="id_chk" value="0" >
+        <input type="hidden" name="mode" value="input" >
         <div class="form-group">
           <label for="f_id">아이디</label>
           <div>

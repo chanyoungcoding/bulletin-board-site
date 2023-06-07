@@ -1,5 +1,3 @@
-<!-- 멤버 클래스 파일 -->
-
 <?php 
 
 class Member {
