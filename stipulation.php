@@ -1,4 +1,7 @@
-<?php include './inc_header.php' ?>
+<?php 
+$js_array = ['js/member.js'];
+include './inc_header.php' 
+?>
     <!-- main -->
     <main>
       <h1 class="text-center mt-5">회원 약관 및 개인정보 취급방침 동의</h1>

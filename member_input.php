@@ -7,6 +7,8 @@ if(!isset($_POST['chk']) or $_POST['chk'] != 1) {
   // </script>");
 }
 
+$js_array = ['js/member_input.js'];
+
 include './inc_header.php'
 ?>
 
@@ -17,28 +19,28 @@ include './inc_header.php'
       <form method="post" action="member_input.php">
 
         <div class="form-group">
-          <label for="username">아이디</label>
+          <label for="f_id">아이디</label>
           <div>
-            <input type="text" id="username" name="username" placeholder="아이디를 입력해 주세요." required>
-            <button class="input__btn">아이디 중복확인</button>
+            <input type="text" id="f_id" name="username" placeholder="아이디를 입력해 주세요." required>
+            <button class="input__btn" id="btn_id_check">아이디 중복확인</button>
           </div>
         </div>
 
         <div class="form-group form-password">
           <div>
-            <label for="password">비밀번호</label>
-            <input type="password" id="password" name="password" placeholder="비밀번호를 입력해 주세요." required>
+            <label for="password-inner">비밀번호</label>
+            <input type="password" id="password-inner" name="password" placeholder="비밀번호를 입력해 주세요." required>
           </div>
           <div>
-            <label for="password">비밀번호 확인</label>
-            <input type="password" id="password" name="password" placeholder="비밀번호를 입력해 주세요." required>
+            <label for="password-inner1">비밀번호 확인</label>
+            <input type="password" id="password-inner1" name="password" placeholder="비밀번호를 입력해 주세요." required>
           </div>
         </div>
 
         <div class="form-group">
-          <label for="email">이메일</label>
+          <label for="f_email">이메일</label>
           <div>
-            <input type="email" id="email" name="email" placeholder="이메일을 입력해 주세요." required>
+            <input type="email" id="f_email" name="email" placeholder="이메일을 입력해 주세요." required>
             <button class="input__btn">이메일 중복확인</button>
           </div>
         </div>
@@ -53,8 +55,8 @@ include './inc_header.php'
 
         <div class="form-group form-address">
           <div>
-            <label for="address">주소</label>
-            <input type="text" id="address" name="address" required>
+            <label for="f_address">주소</label>
+            <input type="text" id="f_address" name="address" required>
           </div>
           <div>
             <label for="detail-address">상세주소</label>
