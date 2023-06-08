@@ -81,7 +81,7 @@ include './inc_header.php'
           <div>
             <div class="profile-image-text">
               <label for="f_photo">프로필 이미지</label>
-              <input type="file" id="f_photo" name="profile">
+              <input type="file" id="f_photo" name="photo">
             </div>
             <img id="f_preview" src="./img/logo.png" alt="프로필 이미지 미리 보기" style="width:200px; height:200px;">
           </div>

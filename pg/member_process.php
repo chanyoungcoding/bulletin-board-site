@@ -40,6 +40,15 @@ if($mode == 'id_chk') {
     die(json_encode(['result' => 'success']));
   }
 } else if($mode == 'input') {
+
+  //이미지 처리
+  $temparr = explode('.', $_FILES['photo']['name']);
+  $ext = end($temparr);
+  $photo = $id .'.'. $ext;
+
+  copy($_FILES['photo']['tmp_name'], "../data/profile/".$photo);
+
+  //DB에 보내줄 값
   $arr = [
     'id' => $id,
     'email' => $email,
@@ -47,7 +56,8 @@ if($mode == 'id_chk') {
     'password' => $password,
     'zipcode' => $zipcode,
     'addr1' => $addr1,
-    'addr2' => $addr2
+    'addr2' => $addr2,
+    'photo' => $photo
   ];
 
   $mem->input($arr);

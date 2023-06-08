@@ -30,8 +30,22 @@ class Member {
   }
 
   //회원정보 입력
-  public function input($marray) {
-    var_dump($marray);
+  public function input($marr) {
+    $sql = "INSERT INTO member(id, name, password, email, zipcode, addr1, addr2, photo, create_at, ip) VALUES
+            (:id, :name, :password, :email, :zipcode, :addr1, :addr2, :photo, NOW(), :ip)";
+
+    $stmt = $this->conn->prepare($sql);
+    $stmt->bindParam(':email', $marr['']);
+    $stmt->bindParam(':id', $marr['id']);
+    $stmt->bindParam(':name', $marr['name']);
+    $stmt->bindParam(':password', $marr['password']);
+    $stmt->bindParam(':email', $marr['email']);
+    $stmt->bindParam(':zipcode', $marr['zipcode']);
+    $stmt->bindParam(':addr1', $marr['addr1']);
+    $stmt->bindParam(':addr2', $marr['addr2']);
+    $stmt->bindParam(':photo', $marr['photo']);
+    $stmt->bindParam(':ip', $marr['REMOTE_ADDR']);
+    $stmt->execute();
   }
 
 }
