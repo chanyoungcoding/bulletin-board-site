@@ -52,7 +52,7 @@ include './inc_header.php'
         <div class="form-group">
           <label for="zipcode">우편번호</label>
           <div>
-            <input type="text" id="f_zipcode" name="zipcode">
+            <input type="text" id="f_zipcode" name="zipcode" readonly>
             <button type="button" class="input__btn" id="btn_zipcode">우편번호찾기</button>
           </div>
         </div>
@@ -60,11 +60,11 @@ include './inc_header.php'
         <div class="form-group form-address">
           <div>
             <label for="f_addr1">주소</label>
-            <input type="text" id="f_addr1" name="address">
+            <input type="text" id="f_addr1" name="addr1">
           </div>
           <div>
             <label for="f_addr2">상세주소</label>
-            <input type="text" id="f_addr2" name="detail-address" placeholder="상세주소를 입력해 주세요.">
+            <input type="text" id="f_addr2" name="addr2" placeholder="상세주소를 입력해 주세요.">
           </div>
         </div>
 
