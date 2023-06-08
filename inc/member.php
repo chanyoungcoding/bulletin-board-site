@@ -19,6 +19,11 @@ class Member {
     return $stmt->rowCount() ? true : false ;    // 검색했을때 아무것도 없다면 가로열도 0 일 것이다.
   }
 
+  //이메일 형식 체크 함수, 메소드
+  public function email_format_check($email) {
+    return filter_var($email, FILTER_VALIDATE_EMAIL);
+  }
+
   //이메일 중복체크용 멤버 함수,메소드
   public function email_exists($email) {
     $sql = "SELECT * FROM member WHERE email=:email"; 
@@ -29,7 +34,7 @@ class Member {
     return $stmt->rowCount() ? true : false ; 
   }
 
-  //회원정보 입력
+  //회원정보 입력해서 db에 저장 함수, 메소드
   public function input($marr) {
     $sql = "INSERT INTO member(id, name, password, email, zipcode, addr1, addr2, photo, create_at, ip) VALUES
             (:id, :name, :password, :email, :zipcode, :addr1, :addr2, :photo, NOW(), :ip)";
@@ -47,7 +52,6 @@ class Member {
     $stmt->bindParam(':ip', $marr['REMOTE_ADDR']);
     $stmt->execute();
   }
-
 }
 
 ?>

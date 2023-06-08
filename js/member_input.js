@@ -72,6 +72,10 @@ btn_email_check.addEventListener('click', () => {
       } else if (data.result == 'empty_email') {
         alert('이메일가 비어 있습니다.');
         f_email.focus();
+      } else if (data.result == 'email_format_wrong') {
+        alert('이메일이 형식에 맞지 않습니다.')
+        f_email.value = ''
+        f_email.focus();
       }
     }
   }
