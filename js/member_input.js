@@ -92,6 +92,13 @@ btn_submit.addEventListener('click', () => {
     return false
   }
 
+  //이름 입력 확인
+  if (f.name.value == '') {
+    alert('이름을 입력해 주세요.')
+    f.name.focus();
+    return false
+  }
+
   //비밀번호 확인
   if (f.password.value == '') {
     alert('비밀번호를 입력해 주세요.')
@@ -144,7 +151,7 @@ btn_submit.addEventListener('click', () => {
     f.addr2.focus()
     return false
   }
-  
+
   f.submit()
 })
 

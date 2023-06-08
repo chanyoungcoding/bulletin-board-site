@@ -9,6 +9,8 @@ if(!isset($_POST['chk']) or $_POST['chk'] != 1) {
 
 $js_array = ['js/member_input.js'];
 
+$g_title = '회원가입';
+
 include './inc_header.php'
 ?>
 
@@ -27,6 +29,13 @@ include './inc_header.php'
           <div>
             <input type="text" id="f_id" name="id" placeholder="아이디를 입력해 주세요.">
             <button type="button"  class="input__btn" id="btn_id_check">아이디 중복확인</button>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="f_name">이름</label>
+          <div>
+            <input type="text" id="f_name" name="name" placeholder="이름를 입력해 주세요.">
           </div>
         </div>
 
