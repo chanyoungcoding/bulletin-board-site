@@ -10,6 +10,13 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
   <link rel=stylesheet href='./css/signin.css' type='text/css'>
   <?php
+    if(isset($css_array)) {
+      foreach($css_array as $var) {
+        echo "<link rel='stylesheet' href='$var' type='text/css'/>".PHP_EOL;
+      }
+    }
+  ?>
+  <?php
     if(isset($js_array)) {
       foreach($js_array as $var) {
         echo "<script defer src='$var'></script>".PHP_EOL;
@@ -28,10 +35,10 @@
       </a>
 
       <ul class="nav nav-pills">
-        <li class="nav-item"><a href="#" class="nav-link active" aria-current="page">Home</a></li>
-        <li class="nav-item"><a href="#" class="nav-link">회사소개</a></li>
-        <li class="nav-item"><a href="#" class="nav-link">회원가입</a></li>
-        <li class="nav-item"><a href="#" class="nav-link">게시판</a></li>
-        <li class="nav-item"><a href="#" class="nav-link">로그인</a></li>
+        <li class="nav-item"><a href="index.php" class="nav-link <?= ($menu_code == '') ? 'active' : '' ?>" aria-current="page">Home</a></li>
+        <li class="nav-item"><a href="company.php" class="nav-link <?= ($menu_code == 'company') ? 'active' : '' ?>">회사소개</a></li>
+        <li class="nav-item"><a href="stipulation.php" class="nav-link <?= ($menu_code == 'member') ? 'active' : '' ?>">회원가입</a></li>
+        <li class="nav-item"><a href="board.php" class="nav-link <?= ($menu_code == 'board') ? 'active' : '' ?>">게시판</a></li>
+        <li class="nav-item"><a href="login.php" class="nav-link <?= ($menu_code == 'login') ? 'active' : '' ?>">로그인</a></li>
       </ul>
     </header>
