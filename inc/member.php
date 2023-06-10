@@ -46,6 +46,12 @@ class Member {
       $row = $stmt->fetch();
 
       if( password_verify($pw, $row['password'])) {
+        $sql = "UPDATE member SET login_dt=NOW() WHERE id=:id";
+        $stmt = $this->conn->prepare($sql);
+        $stmt->bindParam(':id', $id);
+    
+        $stmt->execute();
+        
         return true;
       } else {
         return false;
@@ -53,6 +59,14 @@ class Member {
     } else {
       return false;
     }
+  }
+
+  //로그아웃
+  public function logout() {
+    session_start();
+    session_destroy();
+
+    die("<script>self.location.href='../index.php';</script>");
   }
 
   //회원정보 입력해서 db에 저장 함수, 메소드
@@ -76,6 +90,16 @@ class Member {
     $stmt->bindParam(':photo', $marr['photo']);
     $stmt->bindParam(':ip', $marr['REMOTE_ADDR']);
     $stmt->execute();
+  }
+
+  public function getInfo($id) {
+    $sql = "SELECT * FROM member WHERE id=:id";
+    $stmt = $this->conn->prepare($sql);
+    $stmt->bindParam(':id', $id);
+    $stmt->setFetchMode(PDO::FETCH_ASSOC);
+    $stmt->execute();
+
+    return $stmt->fetch();
   }
 }
 

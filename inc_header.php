@@ -35,13 +35,13 @@
       </a>
 
       <ul class="nav nav-pills">
-        <?php if($ses_id != '') { ?>
+        <?php if(isset($ses_id) && $ses_id != '') { ?>
 
         <li class="nav-item"><a href="index.php" class="nav-link <?= ($menu_code == '') ? 'active' : '' ?>" aria-current="page">Home</a></li>
         <li class="nav-item"><a href="company.php" class="nav-link <?= ($menu_code == 'company') ? 'active' : '' ?>">회사소개</a></li>
         <li class="nav-item"><a href="mypage.php" class="nav-link <?= ($menu_code == 'member') ? 'active' : '' ?>">마이페이지</a></li>
         <li class="nav-item"><a href="board.php" class="nav-link <?= ($menu_code == 'board') ? 'active' : '' ?>">게시판</a></li>
-        <li class="nav-item"><a href="logout.php" class="nav-link <?= ($menu_code == 'login') ? 'active' : '' ?>">로그아웃</a></li>
+        <li class="nav-item"><a href="./pg/logout.php" class="nav-link <?= ($menu_code == 'login') ? 'active' : '' ?>">로그아웃</a></li>
 
         <?php } else { ?>
 
