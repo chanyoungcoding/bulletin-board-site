@@ -46,12 +46,14 @@ if($mode == 'id_chk') {
 } else if($mode == 'input') {
 
   //이미지 처리
-  $temparr = explode('.', $_FILES['photo']['name']);
-  $ext = end($temparr);
-  $photo = $id .'.'. $ext;
+  $photo = '';
+  if(isset($_FILES['photo']) && $_FILES['photo']['name'] != '') {
+    $temparr = explode('.', $_FILES['photo']['name']);
+    $ext = end($temparr);
+    $photo = $id .'.'. $ext;
 
-  copy($_FILES['photo']['tmp_name'], "../data/profile/".$photo);
-
+    copy($_FILES['photo']['tmp_name'], "../data/profile/".$photo);
+  }
   //DB에 보내줄 값
   $arr = [
     'id' => $id,
@@ -71,4 +73,46 @@ if($mode == 'id_chk') {
     self.location.href='../member_success.php'
   </script>
   ";
+
+} else if($mode == 'edit') {
+
+  $old_photo = (isset($_POST['old_photo']) && $_POST['old_photo'] != '') ? $_POST['old_photo'] : '';
+
+  if(isset($_FILES['photo']) && $_FILES['photo']['name'] != '') {
+
+    if($old_photo != '') {
+      unlink("../data/profile/". $old_photo);
+    }
+
+    $tmparr = explode('.', $_FILES['photo']['name']);
+    $ext = end($tmparr);
+    $photo = $id .'.'. $ext;
+  
+    copy($_FILES['photo']['tmp_name'], "../data/profile/". $photo);
+
+    $old_photo = $photo;
+  }
+
+  session_start();
+
+  $arr = [
+    'id' => $_SESSION['ses_id'],
+    'email' => $email,
+    'name' => $name,
+    'password' => $password,
+    'zipcode' => $zipcode,
+    'addr1' => $addr1,
+    'addr2' => $addr2,
+    'photo' => $old_photo
+  ];
+
+  $mem->edit($arr);
+
+  echo "
+  <script>
+    alert('수정되었습니다.');
+    self.location.href='../index.php'
+  </script>
+  ";
+
 }

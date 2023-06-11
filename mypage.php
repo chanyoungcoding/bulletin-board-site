@@ -21,7 +21,7 @@ $mem = new Member($db);
 $memArr = $mem->getInfo($ses_id);
 
 $js_array = ['js/mypage.js'];
-
+$menu_code = 'member';
 $g_title = '회원수정';
 
 include './inc_header.php'
@@ -34,14 +34,15 @@ include './inc_header.php'
     <div class="form-container">
       <h2>회원가입</h2>
       <form name="input_form" method="post" enctype="multipart/form-data" action="pg/member_process.php">
-        <input type="hidden" name="id_chk" value="0" >
         <input type="hidden" name="email_chk" value="0" >
         <input type="hidden" name="mode" value="edit" >
+        <input type="hidden" name="old_email" value="<?= $memArr['email']; ?>">
+        <input type="hidden" name="old_photo" value="<?= $memArr['photo']; ?>">
+
         <div class="form-group">
           <label for="f_id">아이디</label>
           <div>
             <input type="text" id="f_id" name="id" readonly placeholder="아이디를 입력해 주세요." value="<?= $memArr['id'] ?>">
-            <button type="button"  class="input__btn" id="btn_id_check">아이디 중복확인</button>
           </div>
         </div>
 

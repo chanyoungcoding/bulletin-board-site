@@ -5,6 +5,12 @@ btn_email_check.addEventListener('click', () => {
   const f_email = document.querySelector("#f_email");
   if (f_email.value == '') {
     alert('이메일을 입력해 주세요.')
+    f_email.focus();
+    return false;
+  }
+
+  if (document.input_form.old_email.value == f_email.value) {
+    alert('기존 이메일 입니다.')
     return false;
   }
 
@@ -45,16 +51,6 @@ btn_email_check.addEventListener('click', () => {
 const btn_submit = document.querySelector('#btn_submit');
 btn_submit.addEventListener('click', () => {
   const f = document.input_form;
-  if (f.id.value == '') {
-    alert('아이디를 입력해 주세요.')
-    return false
-  }
-
-  //아이디 중복 체크 여부
-  if (f.id_chk.value == '0') {
-    alert('아이디를 중복 체크 해주세요.')
-    return false
-  }
 
   //이름 입력 확인
   if (f.name.value == '') {
@@ -64,22 +60,15 @@ btn_submit.addEventListener('click', () => {
   }
 
   //비밀번호 확인
-  if (f.password.value == '') {
-    alert('비밀번호를 입력해 주세요.')
-    f.password.focus();
-    return false
-  }
-  if (f.password2.value == '') {
+  if (f.password.value != '' && f.password2.value == '') {
     alert('확인용 비밀번호를 입력해 주세요.')
     f.password2.focus();
     return false
   }
-
-  // 비밀번호와 확인비밀번호 일치 여부
   if (f.password.value != f.password2.value) {
     alert('비밀번호가 서로 일치하지 않습니다.')
     f.password.value = ''
-    f.password2.value = ''
+    f.passwor2.value = ''
     f.password.focus();
     return false
   }
@@ -91,10 +80,14 @@ btn_submit.addEventListener('click', () => {
     return false
   }
 
-  if (f.email_chk.value == 0) {
-    alert('이메일 중복확인을 해주세요.')
-    return false
+  //이메일을 변경했다면
+  if (f.old_email.value != f.email.value) {
+    if (f.email_chk.value == 0) {
+      alert('이메일 중복확인을 해주세요.')
+      return false
+    }    
   }
+
 
   //우편번호 입력 확인
   if (f.zipcode.value == '') {
