@@ -1,0 +1,17 @@
+.home__main {
+  background-color: rgb(218, 241, 241);
+  max-width: 1500px;
+  height: 100vh;
+}
+  
+.swiper-container {
+  max-width: 200px;
+  overflow: hidden;
+  background-color: aqua;
+}
+
+.swiper-slide {
+  width: 100px;
+  height: 100px;
+  background-color: aquamarine;
+}
