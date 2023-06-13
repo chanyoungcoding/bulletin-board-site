@@ -37,50 +37,50 @@ include 'inc_header.php';
           <div class="swiper-slide">
             <a href="javascript:void(0)">
               <div>
-                <img src="./img/example.jpg" alt="이미지 입니다.">
+                <img src="./img/cat1.jpg" alt="이미지 입니다.">
               </div>
               <div class="img__intro">
-                가나다라마바사아자차카파타하가나다라마바사
+                고양이 입술 붓거나 염증이 생겼다면 대처 방법
               </div>
             </a>
           </div>
           <div class="swiper-slide">
             <a href="javascript:void(0)">
               <div>
-                <img src="./img/example.jpg" alt="이미지 입니다.">
+                <img src="./img/cat2.jpg" alt="이미지 입니다.">
               </div>
               <div class="img__intro">
-                가나다라마바사아자차카파타하가나다라마바사
+                개냥이 , 냥아치와의 차이점은 어떤 것이 있을까?
               </div>
             </a>
           </div>
           <div class="swiper-slide">
             <a href="javascript:void(0)">
               <div>
-                <img src="./img/example.jpg" alt="이미지 입니다.">
+                <img src="./img/cat3.jpeg" alt="이미지 입니다.">
               </div>
               <div class="img__intro">
-                가나다라마바사아자차카파타하가나다라마바사
+                고양이 똥냄새가 지독한 이유 8 가지
               </div>
             </a>
           </div>
           <div class="swiper-slide">
             <a href="javascript:void(0)">
               <div>
-                <img src="./img/example.jpg" alt="이미지 입니다.">
+                <img src="./img/cat4.png" alt="이미지 입니다.">
               </div>
               <div class="img__intro">
-                가나다라마바사아자차카파타하가나다라마바사
+                고양이 구토증상, 원인과 대처 방법은?
               </div>
             </a>
           </div>
           <div class="swiper-slide">
             <a href="javascript:void(0)">
               <div>
-                <img src="./img/example.jpg" alt="이미지 입니다.">
+                <img src="./img/cat5.jpg" alt="이미지 입니다.">
               </div>
               <div class="img__intro">
-                가나다라마바사아자차카파타하가나다라마바사
+                고양이 분리불안 증상 및 대처 방법
               </div>
             </a>
           </div>
@@ -137,7 +137,7 @@ include 'inc_header.php';
                 <img src="./img/dog5.jpg" alt="이미지 입니다.">
               </div>
               <div class="img__intro">
-                가나다라마바사아자차카파타하가나다라마바사
+                유기견 봉사 신청 방법과 종류, 준비물 알아보기
               </div>
             </a>
           </div>
