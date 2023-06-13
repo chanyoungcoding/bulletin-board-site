@@ -1,17 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Dongle:wght@700&display=swap');
+
 .home__main {
+  font-family: 'Dongle', sans-serif;
+  margin: 0;
+  padding: 0;
   background-color: rgb(218, 241, 241);
   max-width: 1500px;
   height: 100vh;
+  font-size: 40px;
 }
-  
+
+/* home-main */
+
+.home__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header__preface {
+  font-size: 30px;
+  font-weight: 600;
+  transform: rotate(30deg);
+  margin-left: 20px;
+}
+
+.header__animal {
+  display: flex;
+}
+
+.header__animal > a:hover {
+  background-color: #FFCD00;
+}
+
+.header__animal > a {
+  text-decoration: none;
+  color: black;
+  font-weight: 600;
+  padding: 30px;
+  transition: all .4s;
+}
+
+/* home-center */
+
+.home__center {
+  display: flex;
+  flex-direction: column;
+  background-color: #656049;
+  text-align: center;
+}
+
+.center__informationName {
+  width: 100%;
+  margin-top: 10px;
+}
+
+.center__informationName div p {
+  display: inline-block;
+  border-bottom: 2px solid #FFCD00;
+}
+
+.center__intro {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+/* swiper */  
 .swiper-container {
-  max-width: 200px;
+  max-width: 660px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   overflow: hidden;
-  background-color: aqua;
 }
 
 .swiper-slide {
-  width: 100px;
-  height: 100px;
+  width: 200px;
+  height: 200px;
   background-color: aquamarine;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.swiper-slide a {
+  text-decoration: none;
+  color: black;
+}
+
+.swiper-slide a div > img {
+  width: 100%;
+  height: 100%;
+}
+
+.img__intro {
+  width: 100%;
+  height: 100%;
+  font-size: 30px;
+  background-color: aliceblue;
+  line-height: 30px;
+}
+
+.swiper-slide:nth-child(1) {
+  margin-left: 0;
 }
