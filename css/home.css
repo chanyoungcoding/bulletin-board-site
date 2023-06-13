@@ -1,4 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Dongle:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@500&display=swap');
+
 
 .home__main {
   font-family: 'Dongle', sans-serif;
@@ -46,7 +48,6 @@
 .home__center {
   display: flex;
   flex-direction: column;
-  background-color: #656049;
   text-align: center;
 }
 
@@ -62,13 +63,14 @@
 
 .center__intro {
   width: 100%;
+  height: 210px;
   display: flex;
   justify-content: center;
 }
 
 /* swiper */  
 .swiper-container {
-  max-width: 660px;
+  max-width: 662px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -81,11 +83,17 @@
   background-color: aquamarine;
   border-radius: 10px;
   overflow: hidden;
+  box-shadow: 1px 1px 3px -1px #1f1e1e;
 }
 
 .swiper-slide a {
   text-decoration: none;
   color: black;
+}
+
+.swiper-slide a div {
+  width: 100%;
+  height: 70%;
 }
 
 .swiper-slide a div > img {
@@ -94,11 +102,11 @@
 }
 
 .img__intro {
-  width: 100%;
-  height: 100%;
-  font-size: 30px;
+  padding: 10px 20px;
+  position: relative;
+  font-size: 13px;
   background-color: aliceblue;
-  line-height: 30px;
+  font-family: 'Noto Sans KR', sans-serif;
 }
 
 .swiper-slide:nth-child(1) {

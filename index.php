@@ -94,47 +94,47 @@ include 'inc_header.php';
         <div class="swiper-slide">
             <a href="javascript:void(0)">
               <div>
-                <img src="./img/example.jpg" alt="이미지 입니다.">
+                <img src="./img/mango.jpg" alt="이미지 입니다.">
               </div>
               <div class="img__intro">
-                가나다라마바사아자차카파타하가나다라마바사
+                강아지 망고 먹어도 되나요?
               </div>
             </a>
           </div>
           <div class="swiper-slide">
             <a href="javascript:void(0)">
               <div>
-                <img src="./img/example.jpg" alt="이미지 입니다.">
+                <img src="./img/dog2.jpg" alt="이미지 입니다.">
               </div>
               <div class="img__intro">
-                가나다라마바사아자차카파타하가나다라마바사
+                강아지가 피곤할때 해결법
               </div>
             </a>
           </div>
           <div class="swiper-slide">
             <a href="javascript:void(0)">
               <div>
-                <img src="./img/example.jpg" alt="이미지 입니다.">
+                <img src="./img/dog3.jpg" alt="이미지 입니다.">
               </div>
               <div class="img__intro">
-                가나다라마바사아자차카파타하가나다라마바사
+                강아지 비행 탑승 전 꼭 확인해야 절차
               </div>
             </a>
           </div>
           <div class="swiper-slide">
             <a href="javascript:void(0)">
               <div>
-                <img src="./img/example.jpg" alt="이미지 입니다.">
+                <img src="./img/dog4.jpg" alt="이미지 입니다.">
               </div>
               <div class="img__intro">
-                가나다라마바사아자차카파타하가나다라마바사
+                강아지가 천둥 번개 소리를 무서워 하는 이유는?
               </div>
             </a>
           </div>
           <div class="swiper-slide">
             <a href="javascript:void(0)">
               <div>
-                <img src="./img/example.jpg" alt="이미지 입니다.">
+                <img src="./img/dog5.jpg" alt="이미지 입니다.">
               </div>
               <div class="img__intro">
                 가나다라마바사아자차카파타하가나다라마바사
