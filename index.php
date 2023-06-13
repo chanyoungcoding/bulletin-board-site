@@ -146,6 +146,43 @@ include 'inc_header.php';
     </div>
   </div>
 
+  <!-- 새로 나온 컨텐츠 -->
+
+  <div class="home__new">
+    <p>새로 나온 컨텐츠</p>
+    <div class="new__container">
+      <a href="javascript:void(0)">
+        <div class="new__left">
+          <div class="new__intro">
+            <p>강아지 눈물과 눈물자국의 원인</p>
+          </div>
+        </div>
+      </a>
+      <div class="new__right">
+        <a href="javascript:void(0)">
+          <div class="right__1">
+            <div class="right__img"></div>
+            <div class="right__text">
+              <p class="rg__text1">강아지의 쿨나시 추천 제품 10가지</p>
+              <p class="rg__text2">강아지들도 더위를 타는것을 알고있는 사람은 거의 없습니다. 따라서 이번 기회에... </p>
+            </div>
+          </div>
+        </a>
+
+        <a href="javascript:void(0)">
+          <div class="right__2">
+            <div class="right__img2"></div>
+            <div class="right__text">
+              <p class="rg__text1">반려동물 재난 대처, 알고있나요?</p>
+              <p class="rg__text2">재난이 가장 무서운 이유는 언제, 어디서 일어날지 모르기 때문입니다. 이러한 갑작스러운 상황에서... </p>
+            </div>
+          </div>
+        </a>
+      </div>
+    </div>
+
+  </div>
+
 
 </main>
 
