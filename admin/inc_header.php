@@ -15,7 +15,7 @@
   <!-- swiper  -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
   <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
-  <link rel=stylesheet href='./css/signin.css' type='text/css'>
+  <link rel=stylesheet href='../css/signin.css' type='text/css'>
   <?php
     if(isset($css_array)) {
       foreach($css_array as $var) {

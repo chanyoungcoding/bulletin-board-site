@@ -6,7 +6,7 @@ $ses_id = (isset($_SESSION['ses_id']) && $_SESSION['ses_id'] != '') ? $_SESSION[
 $ses_level = (isset($_SESSION['ses_level']) && $_SESSION['ses_level'] != '') ? $_SESSION['ses_level'] : '';
 
 $g_title = 'Home';
-$js_array = ['js/home.js'];
+$js_array = ['js/main.js'];
 $css_array = ['./css/home.css'];
 $menu_code = '';
 include 'inc_header.php';

@@ -46,7 +46,7 @@
         <li class="nav-item"><a href="index.php" class="nav-link <?= ($menu_code == '') ? 'active' : '' ?>" aria-current="page">Home</a></li>
         <li class="nav-item"><a href="company.php" class="nav-link <?= ($menu_code == 'company') ? 'active' : '' ?>">회사소개</a></li>
         <?php if($ses_level == 10) { ?>
-          <li class="nav-item"><a href="./admin/" class="nav-link <?= ($menu_code == 'member') ? 'active' : '' ?>">관리자페이지</a></li>
+          <li class="nav-item"><a href="./admin/member.php" class="nav-link <?= ($menu_code == 'member') ? 'active' : '' ?>">관리자페이지</a></li>
         <?php } else { ?>
           <li class="nav-item"><a href="mypage.php" class="nav-link <?= ($menu_code == 'member') ? 'active' : '' ?>">마이페이지</a></li>
         <?php } ?>
