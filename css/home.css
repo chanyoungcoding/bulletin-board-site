@@ -218,3 +218,62 @@ a {
   font-size: 20px;
   color: #919391;
 }
+
+/* home-information */
+
+.home__information {
+  margin-top: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.inf__header {
+  display: inline-block;
+  width: 300px;
+  text-align: center;
+  border-bottom: 3px solid #FFCD00;
+}
+
+.inf__book {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 50px;
+  width: 90%;
+}
+
+.inf__book a {
+  width: 250px;
+  height: 350px;
+}
+
+.inf__book div {
+  width: inherit;
+  height: inherit;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.book__1 {
+  background-image: url('../img/info-img1.png');
+}
+.book__2 {
+  background-image: url('../img/info-img2.png');
+}
+.book__3 {
+  background-image: url('../img/info-img3.png');
+}
+.book__4 {
+  background-image: url('../img/info-img4.png');
+}
+
+
+.inf__book p {
+  margin-top: 10px;
+  text-align: center;
+  font-size: 13px;
+  font-family: sans-serif;
+  color: black;
+}

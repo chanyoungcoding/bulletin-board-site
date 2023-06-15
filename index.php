@@ -184,6 +184,28 @@ include 'inc_header.php';
 
   </div>
 
+  <!-- 백과 사전 -->
+  <div class="home__information">
+    <p class="inf__header">지식 정보 시리즈</p>
+    <div class="inf__book">
+      <a href="javascript:void(0)">
+        <div class="book__1"></div>
+        <p>세상에 모든 강아지 사료 리뷰</p>
+      </a>
+      <a href="javascript:void(0)">
+        <div class="book__2"></div>
+        <p>강아지 사료 유목민을 위한 가이드</p>
+      </a>
+      <a href="javascript:void(0)">
+        <div class="book__3"></div>
+        <p>쉽게 알려주는 고양이 질병 사전</p>
+      </a>
+      <a href="javascript:void(0)">
+        <div class="book__4"></div>
+        <p>쉽게 알려주는 강아지 질병 사전</p>
+      </a>
+    </div>
+  </div>
 
 </main>
 
