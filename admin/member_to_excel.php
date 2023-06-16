@@ -1,5 +1,6 @@
 <?php
 
+include './inc_common.php';
 include '../inc/dbconfig.php';
 include '../inc/member.php';
 

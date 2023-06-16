@@ -51,7 +51,7 @@ $memArr = $mem->list($page,$limit, $paramArr);
       <td><?= $row['name']; ?></td>
       <td><?= $row['email']; ?></td>
       <td><?= $row['create_at']; ?></td>
-      <td><button class="btn btn-danger btn-sm">삭제</button></td>
+      <td><button class="btn btn-danger btn-sm btn_mem_delete" data-idx="<?= $row['idx']; ?>">삭제</button></td>
     </tr>
 <?php
   }

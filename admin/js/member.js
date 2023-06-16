@@ -22,3 +22,34 @@ const btn_excel = document.querySelector("#btn_excel");
 btn_excel.addEventListener("click", () => {
   self.location.href = './member_to_excel.php'
 })
+
+const btn_mem_deletes = document.querySelectorAll(".btn_mem_delete");
+btn_mem_deletes.forEach((box) => {
+  box.addEventListener("click", () => {
+    if (confirm('본 회원을 삭제하시겠습니까?')) {
+      
+      const idx = box.dataset.idx
+      const xhr = new XMLHttpRequest()
+
+      const f = new FormData()
+      f.append("idx", idx)
+
+      xhr.open("POST", "./member_del.php", "true")
+      xhr.send(f)
+
+      xhr.onload = () => {
+        if (xhr.status == 200) {
+          const data = JSON.parse(xhr.responseText)
+          if (data.result == 'success') {
+            self.location.reload()
+          }
+        } else {
+          alert('통신 실패')
+        }
+      }
+
+    } else {
+      alert('삭제 취소')
+    }
+  })
+})

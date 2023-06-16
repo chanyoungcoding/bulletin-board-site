@@ -189,6 +189,14 @@ class Member {
     $stmt->execute();
     return $stmt->fetchAll();
   }
+
+  //회원 삭제
+  public function member_del($idx) {
+    $sql = "DELETE FROM member WHERE idx=:idx";
+    $stmt = $this->conn->prepare($sql);
+    $stmt->bindParam(':idx', $idx);
+    $stmt->execute();
+  }
 }
 
 ?>

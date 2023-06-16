@@ -1,3 +1,207 @@
-p {
-  color: aqua;
+@import url('https://fonts.googleapis.com/css2?family=Dongle:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@500&display=swap');
+
+* {
+  color:#1f1e1e;
+}
+
+a {
+  text-decoration: none;
+}
+
+.home__main {
+  font-family: 'Dongle', sans-serif;
+  margin: 0;
+  padding: 0;
+  max-width: 1500px;
+  height: 100vh;
+  font-size: 40px;
+}
+
+/* home-main */
+
+.home__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header__preface {
+  font-size: 30px;
+  font-weight: 600;
+  transform: rotate(30deg);
+  margin-left: 20px;
+}
+
+.header__animal {
+  display: flex;
+}
+
+.header__animal > a:hover {
+  background-color: #FFCD00;
+}
+
+.header__animal > a {
+  font-weight: 600;
+  padding: 30px;
+  transition: all .4s;
+}
+
+/* main-center */
+
+.main__center {
+  height: 600px;
+}
+
+.center__img {
+  width: inherit;
+  height: 600px;
+  background-image: url('../img/dog0.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.center__img > p {
+  padding-top: 150px;
+}
+
+.center__input {
+  width: 400px;
+  display: flex;
+}
+
+.center__input > input {
+  border: 2px solid #FFCD00;
+}
+
+.center__input > button {
+  border: 2px solid #FFCD00;
+  color: #FFCD00;
+}
+
+.center__input > button:hover {
+  border: 2px solid #FFCD00;
+  background-color: #FFCD00;
+  color: white;
+}
+
+.center__row {
+  display: flex;
+  flex-wrap: wrap;
+  overflow: hidden;
+  justify-content: center;
+  gap: 50px;
+  height: 35px;
+  background-color: #FFCD00;
+  font-size: 25px;
+}
+
+/* home-intro */
+
+.home__intro {
+  height: 700px;
+  margin-top: 30px;
+  background-color: #e0ca72;
+}
+
+.intro__intro {
+  text-align: center;
+  font-size: 50px;
+}
+
+.intro__img {
+  margin-top: 150px;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+
+.intro__img > div {
+  border-radius: 15px;
+  background-color:  orange;
+}
+
+.intro__img1, 
+.intro__img5 {
+  width: 150px;
+  height: 150px;
+}
+
+.intro__img2, 
+.intro__img4 {
+  width: 200px;
+  height: 200px;
+}
+
+.intro__img3 {
+  width: 250px;
+  height: 250px;
+}
+
+.intro__img1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url(../img/orange1.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.intro__img1 > i {
+  color: white;
+  transform: rotate(25deg);
+}
+
+.intro__img2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  background-image: url(../img/orange2.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  font-size: 25px;
+  overflow: hidden;
+}
+
+.img2__div1 {
+  margin-top: 10px;
+  width: 150px;
+  height: 40px;
+  border-radius: 30px;
+  background-color: rgba(255, 255, 255, 0.4);
+  text-align: center;
+}
+
+.img2__div2 {
+  width: 200px;
+  height: 40px;
+  background-color: rgba(255, 255, 255, 0.4);
+  text-align: center;
+}
+.img2__div2 > p {
+}
+
+
+.intro__img3 {
+  background-image: url(../img/orange3.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.intro__img4 {
+  background-image: url(../img/orange4.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.intro__img5 {
+  background-image: url(../img/orange5.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
