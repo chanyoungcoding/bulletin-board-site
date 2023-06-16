@@ -102,12 +102,11 @@ a {
 .home__intro {
   height: 700px;
   margin-top: 30px;
-  background-color: #e0ca72;
 }
 
 .intro__intro {
   text-align: center;
-  font-size: 50px;
+  font-size: 70px;
 }
 
 .intro__img {
@@ -182,26 +181,85 @@ a {
   background-color: rgba(255, 255, 255, 0.4);
   text-align: center;
 }
-.img2__div2 > p {
+
+.intro__img3 > div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  background-color: rgba(0, 0, 0, 0.4);
+  transition: all .4s;
 }
 
+.intro__img3 > div:hover {
+  transform: scale(1.3);
+  cursor: pointer;
+}
+
+.intro__img3 > div p {
+  color: white;
+}
 
 .intro__img3 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   background-image: url(../img/orange3.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
 }
+
 .intro__img4 {
+  position: relative;
   background-image: url(../img/orange4.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
 }
 
-.intro__img5 {
-  background-image: url(../img/orange5.jpg);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
+.img4__first {
+  color: white;
+  position: absolute;
+  left: 20px;
 }
+
+.img4__second {
+  position: absolute;
+  font-size: 30px;
+  padding: 0 10px;
+  line-height: 25px;
+  bottom: -15px;
+  color: white;
+}
+
+.home__message {
+  position: relative;
+}
+
+.home__message > div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
+  width: 350px;
+  height: 150px;
+  padding: 30px;
+  border-radius: 50%;
+  line-height: 30px;
+}
+
+.message__consumer {
+  position: relative;
+  left: 12%;
+  background-color: rgba(77, 56, 56, 0.2);
+}
+
+.message__owner {
+  position: relative;
+  left: 65%;
+  background-color: rgba(189, 189, 189, 0.4);
+}
+

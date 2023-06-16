@@ -20,8 +20,8 @@ include 'inc_header.php';
     </div>
     
     <div class="header__animal">
-    <a href="javascript:void(0)"><div>강아지 연구소</div></a>
-    <a href="javascript:void(0)"><div>고양이 연구소</div></a>
+    <a href="./page/dog.php"><div>강아지 연구소</div></a>
+    <a href="./page/cat.php"><div>고양이 연구소</div></a>
     </div>
   </div>
 

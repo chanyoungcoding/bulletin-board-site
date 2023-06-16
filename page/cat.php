@@ -33,13 +33,13 @@ include 'inc_header.php';
 
   <!-- row -->
   <div class="center__row">
-    <p>&#164;&nbsp;dog laboratory</p>
-    <p>&#164;&nbsp;dog laboratory</p>
-    <p>&#164;&nbsp;dog laboratory</p>
-    <p>&#164;&nbsp;dog laboratory</p>
-    <p>&#164;&nbsp;dog laboratory</p>
-    <p>&#164;&nbsp;dog laboratory</p>
-    <p>&#164;&nbsp;dog laboratory</p>
+    <p>&#164;&nbsp;cat laboratory</p>
+    <p>&#164;&nbsp;cat laboratory</p>
+    <p>&#164;&nbsp;cat laboratory</p>
+    <p>&#164;&nbsp;cat laboratory</p>
+    <p>&#164;&nbsp;cat laboratory</p>
+    <p>&#164;&nbsp;cat laboratory</p>
+    <p>&#164;&nbsp;cat laboratory</p>
   </div>
 
   <!-- introduce -->
