@@ -36,7 +36,7 @@ include 'inc_header.php';
       <div class="swiper-container" id="my-swiper">
         <div class="swiper-wrapper">
           <div class="swiper-slide">
-            <a href="javascript:void(0)">
+            <a href="./page/catIntro1.php">
               <div>
                 <img src="./img/cat1.jpg" alt="이미지 입니다.">
               </div>
@@ -46,7 +46,7 @@ include 'inc_header.php';
             </a>
           </div>
           <div class="swiper-slide">
-            <a href="javascript:void(0)">
+            <a href="./page/catIntro2.php">
               <div>
                 <img src="./img/cat2.jpg" alt="이미지 입니다.">
               </div>
@@ -56,7 +56,7 @@ include 'inc_header.php';
             </a>
           </div>
           <div class="swiper-slide">
-            <a href="javascript:void(0)">
+            <a href="./page/catIntro.php">
               <div>
                 <img src="./img/cat3.jpeg" alt="이미지 입니다.">
               </div>
@@ -66,7 +66,7 @@ include 'inc_header.php';
             </a>
           </div>
           <div class="swiper-slide">
-            <a href="javascript:void(0)">
+            <a href="./page/catIntro3.php">
               <div>
                 <img src="./img/cat4.png" alt="이미지 입니다.">
               </div>
@@ -76,7 +76,7 @@ include 'inc_header.php';
             </a>
           </div>
           <div class="swiper-slide">
-            <a href="javascript:void(0)">
+            <a href="./page/catIntro4.php">
               <div>
                 <img src="./img/cat5.jpg" alt="이미지 입니다.">
               </div>
@@ -93,7 +93,7 @@ include 'inc_header.php';
       <div class="swiper-container" id="my-swiper">
         <div class="swiper-wrapper">
         <div class="swiper-slide">
-            <a href="javascript:void(0)">
+            <a href="./page/dogIntro.php">
               <div>
                 <img src="./img/mango.jpg" alt="이미지 입니다.">
               </div>
@@ -103,17 +103,17 @@ include 'inc_header.php';
             </a>
           </div>
           <div class="swiper-slide">
-            <a href="javascript:void(0)">
+            <a href="./page/dogIntro1.php">
               <div>
                 <img src="./img/dog2.jpg" alt="이미지 입니다.">
               </div>
               <div class="img__intro">
-                강아지가 피곤할때 해결법
+                강아지가 핥는 이유는?
               </div>
             </a>
           </div>
           <div class="swiper-slide">
-            <a href="javascript:void(0)">
+            <a href="./page/dogIntro2.php">
               <div>
                 <img src="./img/dog3.jpg" alt="이미지 입니다.">
               </div>
@@ -123,7 +123,7 @@ include 'inc_header.php';
             </a>
           </div>
           <div class="swiper-slide">
-            <a href="javascript:void(0)">
+            <a href="./page/dogIntro3.php">
               <div>
                 <img src="./img/dog4.jpg" alt="이미지 입니다.">
               </div>
@@ -133,7 +133,7 @@ include 'inc_header.php';
             </a>
           </div>
           <div class="swiper-slide">
-            <a href="javascript:void(0)">
+            <a href="./page/dogIntro4.php">
               <div>
                 <img src="./img/dog5.jpg" alt="이미지 입니다.">
               </div>
@@ -207,7 +207,6 @@ include 'inc_header.php';
     </div>
   </div>
 
-</main>
 
 <?php
 include 'inc_footer.php';

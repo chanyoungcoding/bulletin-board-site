@@ -269,11 +269,20 @@ a {
   background-image: url('../img/info-img4.png');
 }
 
-
 .inf__book p {
   margin-top: 10px;
   text-align: center;
   font-size: 13px;
   font-family: sans-serif;
   color: black;
+}
+
+.home__footer {
+  margin-top: 80px;
+  height: 130px;
+  padding-left: 70px;
+  font-size: 30px;
+  line-height: 30px;
+  background-color: #FFCD00;
+  border-radius: 0 0 10px 10px;
 }

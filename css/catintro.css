@@ -1,0 +1,126 @@
+main {
+  display: flex;
+}
+
+/* left */
+
+.intro__left h1 {
+  margin-top: 50px;
+}
+
+.left__hash {
+  display: flex;
+  gap: 10px;
+}
+
+.left__hash div {
+  font-size: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 20px;
+  border-radius: 10px;
+  background-color: gray;
+}
+
+.intro__left p {
+  font-size: 15px;
+}
+
+.hash__img {
+  width: 800px;
+  height: 500px;
+  background-image: url('../img/catpu.jpeg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-bottom: 50px;
+}
+
+.hash__img1 {
+  width: 800px;
+  height: 500px;
+  background-image: url('../img/catmouse.jpeg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-bottom: 50px;
+}
+
+.hash__img2 {
+  width: 800px;
+  height: 500px;
+  background-image: url('../img/catcry.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-bottom: 50px;
+}
+
+.hash__img3 {
+  width: 800px;
+  height: 500px;
+  background-image: url('../img/catoo.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-bottom: 50px;
+}
+
+.hash__img4 {
+  width: 800px;
+  height: 500px;
+  background-image: url('../img/cat5.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-bottom: 50px;
+}
+
+.left__last {
+  margin: 30px 0;
+}
+
+/* right */
+
+.intro__right {
+  margin-top: 250px;
+  width: 1000px;
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+}
+
+.right__intro {
+  background-color: #FFCD00;
+  padding: 10px;
+  border-radius: 0 10px 10px 0;
+}
+
+.intro__right > div {
+  display: flex;
+}
+
+.intro__right .right__img,
+.intro__right .right__img1,
+.intro__right .right__img2 {
+  width: 200px;
+  height: 150px;
+  border-radius: 10px 0 0 10px;
+  margin-left:20px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.intro__right .right__img {
+  background-image: url('../img/cat1.jpg');
+}
+
+.intro__right .right__img1 {
+  background-image: url('../img/cat4.png');
+}
+.intro__right .right__img2 {
+  background-image: url('../img/cat6.jpg');
+}

@@ -54,14 +54,14 @@ include 'inc_header.php';
       </div>
       <div class="intro__img2">
         <div class="img2__div1"><p>강아지 구출율</p></div>
-        <div class="img2__div2"><p> 유기견을 3600마리 가량 구출</p></div>
+        <div class="img2__div2"><p> 강아지를 3600마리 가량 구출</p></div>
       </div>
       <div class="intro__img3">
         <div><p>JOIN</p></div>
       </div>
       <div class="intro__img4">
         <p class="img4__first">강아지 입양</p>
-        <p class="img4__second">키울 자격이 있는 견주분들에게 입양</p>
+        <p class="img4__second">키울 자격이 있는 묘주분들에게 입양</p>
       </div>
       <div class="intro__img1">
         <i class="fa-solid fa-bone"></i>
@@ -86,4 +86,6 @@ include 'inc_header.php';
     </div>
   </div>
 
-</main>
+<?php
+include 'inc_footer.php';
+?>

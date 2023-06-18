@@ -56,7 +56,7 @@ a {
 .center__img {
   width: inherit;
   height: 600px;
-  background-image: url('../img/dog0.jpg');
+  background-image: url('../img/cat6.jpg');
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -142,7 +142,7 @@ a {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-image: url(../img/orange1.jpg);
+  background-image: url(../img/cat8.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -158,7 +158,7 @@ a {
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  background-image: url(../img/orange2.jpg);
+  background-image: url(../img/cat7.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -206,7 +206,7 @@ a {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-image: url(../img/orange3.jpg);
+  background-image: url(../img/cat9.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -214,7 +214,7 @@ a {
 
 .intro__img4 {
   position: relative;
-  background-image: url(../img/orange4.jpg);
+  background-image: url(../img/cat10.png);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;

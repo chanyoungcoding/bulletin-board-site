@@ -16,7 +16,3 @@ include 'inc_header.php';
     </form>
   </div>
 </main>
-
-<?php
-include 'inc_footer.php';
-?>

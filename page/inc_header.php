@@ -36,7 +36,7 @@
 
     <!-- header -->
     <header class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom">
-      <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-dark text-decoration-none">
+      <a href="../index.php" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-dark text-decoration-none">
         <span class="fs-4"><i class="fa-solid fa-paw"></i>&nbsp;동물학교</span>
       </a>
 
@@ -44,21 +44,17 @@
         <?php if(isset($ses_id) && $ses_id != '') { ?>
 
         <li class="nav-item"><a href="../index.php" class="nav-link <?= ($menu_code == '') ? 'active' : '' ?>" aria-current="page">Home</a></li>
-        <li class="nav-item"><a href="../company.php" class="nav-link <?= ($menu_code == 'company') ? 'active' : '' ?>">회사소개</a></li>
         <?php if($ses_level == 10) { ?>
           <li class="nav-item"><a href="../admin/" class="nav-link <?= ($menu_code == 'member') ? 'active' : '' ?>">관리자페이지</a></li>
         <?php } else { ?>
           <li class="nav-item"><a href="../mypage.php" class="nav-link <?= ($menu_code == 'member') ? 'active' : '' ?>">마이페이지</a></li>
         <?php } ?>
-        <li class="nav-item"><a href="../board.php" class="nav-link <?= ($menu_code == 'board') ? 'active' : '' ?>">게시판</a></li>
         <li class="nav-item"><a href="../pg/logout.php" class="nav-link <?= ($menu_code == 'login') ? 'active' : '' ?>">로그아웃</a></li>
 
         <?php } else { ?>
 
         <li class="nav-item"><a href="../index.php" class="nav-link <?= ($menu_code == '') ? 'active' : '' ?>" aria-current="page">Home</a></li>
-        <li class="nav-item"><a href="../company.php" class="nav-link <?= ($menu_code == 'company') ? 'active' : '' ?>">회사소개</a></li>
         <li class="nav-item"><a href="../stipulation.php" class="nav-link <?= ($menu_code == 'member') ? 'active' : '' ?>">회원가입</a></li>
-        <li class="nav-item"><a href="../board.php" class="nav-link <?= ($menu_code == 'board') ? 'active' : '' ?>">게시판</a></li>
         <li class="nav-item"><a href="../login.php" class="nav-link <?= ($menu_code == 'login') ? 'active' : '' ?>">로그인</a></li>
 
         <?php } ?>
